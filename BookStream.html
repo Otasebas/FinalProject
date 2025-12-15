@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<title> Bookstream </title>
+		<link rel="stylesheet" type="text/css" href="css/BookStream.css">
+
+		<script>
+				const books = [
+			  {
+			    Name: "One Hundred Years of Solitude",
+			    Author: "Gabriel Garcia Marquez",
+			    Description: "Place Holder",
+			    Cover: "books/Bookcover1.jpg",
+			    Progress: 5
+			  },
+			  {
+			    Name: "One Hundred Years of Solitude",
+			    Author: "Gabriel Garcia Marquez",
+			    Description: "Place Holder",
+			    Cover: "books/Bookcover1.jpg",
+			    Progress: 15
+			  },
+			  {
+			    Name: "One Hundred Years of Solitude",
+			    Author: "Gabriel Garcia Marquez",
+			    Description: "Place Holder",
+			    Cover: "books/Bookcover1.jpg",
+			    Progress: 30
+			  },
+			  {
+			    Name: "One Hundred Years of Solitude",
+			    Author: "Gabriel Garcia Marquez",
+			    Description: "Place Holder",
+			    Cover: "books/Bookcover1.jpg",
+			    Progress: 35
+			  },
+			  {
+			    Name: "One Hundred Years of Solitude",
+			    Author: "Gabriel Garcia Marquez",
+			    Description: "Place Holder",
+			    Cover: "books/Bookcover1.jpg",
+			    Progress: 100
+			  },
+			  {
+			    Name: "One Hundred Years of Solitude",
+			    Author: "Gabriel Garcia Marquez",
+			    Description: "Place Holder",
+			    Cover: "books/Bookcover1.jpg",
+			    Progress: 85
+			  },
+			  {
+			    Name: "One Hundred Years of Solitude",
+			    Author: "Gabriel Garcia Marquez",
+			    Description: "Place Holder",
+			    Cover: "books/Bookcover1.jpg",
+			    Progress: 50
+			  },
+			  {
+			    Name: "One Hundred Years of Solitude",
+			    Author: "Gabriel Garcia Marquez",
+			    Description: "Place Holder",
+			    Cover: "books/Bookcover1.jpg",
+			    Progress: 75
+			  },
+			  {
+			    Name: "One Hundred Years of Solitude",
+			    Author: "Gabriel Garcia Marquez",
+			    Description: "Place Holder",
+			    Cover: "books/Bookcover1.jpg",
+			    Progress: 70
+			  }
+			];
+
+		</script>
+
+	</head>
+	<body>
+		<div class="row">
+			<div class="logo-combined">
+				<img class="logo" src="images/logo.svg" alt="Icon">
+				<h1 style="color: #ffae74; font-family: 'Arek Latin', sans-serif;">
+  					Bookstream
+				</h1>
+			</div>
+			<div class="row-right" >
+				<a class="head-buttons" href="Friends.html">Friends</a>
+				<a class="head-buttons" href="MyBooks.html">My Books</a>
+				<a class="head-buttons" href="Profile.html">Profile</a>
+			</div>
+		</div>
+
+		<div class="scroll" id="scroll1">
+			<script>
+				const container = document.getElementById("scroll1");
+
+				books.forEach(book => {
+				  const bookDiv = document.createElement("div");
+				  bookDiv.classList.add("readNow");
+				  bookDiv.innerHTML = `
+				    <img src="${book.Cover}" alt="${book.Name}"">
+				    <h3>${book.Name}</h3>
+				    <p>${book.Author}</p>
+				    <p>${book.Progress}%</p>
+				  `;
+
+				  bookDiv.addEventListener("click",()=>{
+				  	window.open("Review.html")
+				  })
+
+				  container.appendChild(bookDiv);
+				});
+			</script>
+		</div>
+
+		<div class="scroll">
+			<h1>
+				Recomended
+			</h1>
+		</div>
+
+
+
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title> Review </title>
+		<link rel="stylesheet" type="text/css" href="css/BookStream.css">
+	</head>
+	<body>
+		<div class="row">
+			<div class="logo-combined">
+				<img class="logo" src="images/logo.svg" alt="Icon">
+				<h1 style="color: #ffae74; font-family: 'Arek Latin', sans-serif;">
+  					Bookstream
+				</h1>
+			</div>
+			<div class="row-right" >
+				<a class="head-buttons" href="Friends.html">Friends</a>
+				<a class="head-buttons" href="MyBooks.html">My Books</a>
+				<a class="head-buttons" href="Profile.html">Profile</a>
+			</div>
+		</div>
+		<div class="review-box">
+			<div class="review-image">
+				<img src="books/Bookcover1.jpg" alt="One Hundred Years of Solitude">
+			</div>
+			<div class="review-text">
+				<h1>One Hundred Years of Solitude</h1>
+				<p>Gabriel Garcia Marquez</p>
+				<p>Probably Garcia Márquez finest and most famous work. One Hundred Years of Solitude tells the story of the rise and fall, birth and death of a mythical town of Macondo through the history of the Buendia family. Inventive, amusing, magnetic, sad, alive with unforgettable men and women, and with a truth and understanding that strike the soul. One Hundred Years of Solitude is a masterpiece of the art of fiction.</p>
+				<img class="stars" src="images/star-fill.svg" alt="Icon">
+				<img class="stars" src="images/star-fill.svg" alt="Icon">
+				<img class="stars" src="images/star-fill.svg" alt="Icon">
+				<img class="stars" src="images/star-fill.svg" alt="Icon">
+				<img class="stars" src="images/star-fill.svg" alt="Icon">
+				<img id="bookmark" class="stars" src="images/bookmark-line.svg" alt="Icon">
+				<p>
+					
+				</p>
+
+				<script>
+					const bookmark = document.getElementById("bookmark")
+
+					bookmark.addEventListener("click",()=>{
+				  		bookmark.src = "images/bookmark-fill.svg";
+				  	})
+				</script>
+
+			</div>
+		</div>
+	</body>
+</html>
